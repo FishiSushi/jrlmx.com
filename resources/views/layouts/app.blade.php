@@ -8,7 +8,7 @@
         content="width=device-width, initial-scale=1.0"
     >
     <meta
-        name="crsf-token"
+        name="csrf-token"
         content="{{ csrf_token() }}"
     >
     <title>{{ config('app.name', 'JRLmx.com') }}</title>
@@ -29,7 +29,11 @@
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 
-<body>
+<body
+    class="min-h-screen bg-gradient-to-br from-green-900 via-green-950 to-blue-950 text-green-50"
+>
+    <livewire:layout.navigation />
+
     {{ $slot }}
 </body>
 
