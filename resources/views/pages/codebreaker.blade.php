@@ -74,29 +74,32 @@ with(function () {
                     @endforeach
                 </div>
 
-                <button
-                    wire:click="regenerateKey"
-                    wire:loading.attr="disabled"
-                    class="relative mt-3 w-full items-center gap-2 rounded bg-black/90 px-4 py-3 text-center text-white shadow-md transition-colors hover:border-white hover:bg-black/60"
-                >
-                    Generate New Key
-                    <svg
-                        wire:loading.delay
-                        wire:target="regenerateKey"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="absolute right-2 h-6 w-6 animate-spin"
+                <div class="flex items-center justify-end">
+                    <button
+                        wire:click="regenerateKey"
+                        wire:loading.attr="disabled"
+                        class="relative mt-3 w-full items-center gap-2 rounded bg-gradient-to-b from-indigo-900 to-indigo-950 px-4 py-3 text-center text-sm text-indigo-100 shadow-md transition-all hover:border-white hover:bg-indigo-900 active:text-base"
                     >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
-                        />
-                    </svg>
-                </button>
+                        Regenerate Key
+                        <svg
+                            wire:loading.delay
+                            wire:target="regenerateKey"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="absolute right-4 h-6 w-6 animate-spin"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
             </div>
         </main>
     @endvolt

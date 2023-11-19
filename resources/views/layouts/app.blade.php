@@ -30,7 +30,7 @@
 </head>
 
 <body
-    class="min-h-screen bg-gradient-to-br from-green-900 via-green-950 to-blue-950 text-green-50"
+    class="min-h-screen bg-gradient-to-br from-green-950 to-green-900 text-green-100"
 >
     <livewire:layout.navigation />
 
