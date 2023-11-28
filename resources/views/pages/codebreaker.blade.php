@@ -78,7 +78,7 @@ with(function () {
                     <button
                         wire:click="regenerateKey"
                         wire:loading.attr="disabled"
-                        class="relative mt-3 w-full items-center gap-2 rounded bg-gradient-to-b from-indigo-900 to-indigo-950 px-4 py-3 text-center text-sm text-indigo-100 shadow-md transition-all hover:border-white hover:bg-indigo-900 active:text-base"
+                        class="relative mt-3 w-full items-center gap-2 rounded bg-gradient-to-b from-green-700 to-green-900 px-4 py-3 text-center text-sm text-indigo-100 shadow-md transition-all hover:border-white hover:bg-indigo-900 active:text-base"
                     >
                         Regenerate Key
                         <svg

@@ -9,7 +9,7 @@ with(compact('links'));
 ?>
 
 <div>
-    <nav>
+    <nav class="mx-auto max-w-7xl">
         @foreach ($links as $link)
             <a
                 href="{{ route($link['route']) }}"
